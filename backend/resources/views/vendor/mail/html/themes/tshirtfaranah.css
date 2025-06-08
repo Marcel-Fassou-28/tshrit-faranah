@@ -1,0 +1,124 @@
+/* Couleurs principales */
+:root {
+    --primary: #FEAF30; /* Orange principal */
+    --background: #FFF8F0; /* Fond clair */
+    --text: #1F2937; /* Gris foncé pour le texte */
+    --secondary-text: #4B5563; /* Gris moyen */
+    --border: #E5E7EB; /* Gris clair pour les bordures */
+}
+
+/* Style global */
+body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.header {
+    background-color: var(--primary);
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 10px 0;
+    color: var(--text);
+}
+
+.content h2 {
+    font-size: 20px;
+    color: var(--text);
+    margin: 20px 0 10px;
+    font-weight: bold;
+}
+
+.content ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.content ul li {
+    font-size: 16px;
+    color: var(--text);
+    margin-bottom: 8px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--primary);
+    color: #FFFFFF !important;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #F97316; /* Orange plus foncé au survol */
+}
+
+.footer {
+    background-color: var(--background);
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: var(--secondary-text);
+}
+
+.footer a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsivité */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .header h1 {
+        font-size: 20px;
+    }
+
+    .content p, .content ul li {
+        font-size: 14px;
+    }
+
+    .button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
